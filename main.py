@@ -16,7 +16,7 @@ blue=(0, 0, 255)
 red=(255, 0, 0)
 
 # Cor de fundo
-white=(255, 255, 255)
+black=(40, 40, 40)
 
 # Definição do fim do jogo
 game_over=False
@@ -63,7 +63,7 @@ while not game_over:
 
     x1 += x1_change
     y1 += y1_change
-    dis.fill(white)
+    dis.fill(black)
     pygame.draw.rect(dis, blue, [x1, y1, snake_block, snake_block])
 
     pygame.display.update()
